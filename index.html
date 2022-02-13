@@ -1,18 +1,148 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>my awsome web site!!</title>
-</head>
-<body style = "padding:20px">
-
-<h1>welcome to da website!!!!!!</h1>
-<p>Epic apps:</p>
-<a href="https://crobodile.github.io/zherzhClicker">ƷerʒCoin Clicker</a> <br><br>
-  <a href="https://crobodile.github.io/ClickFor100/">Click For 100 Dollars</a> <br><br>
-<a href="https://crobodile.github.io/YoMomma">Yo Momma Joke Generator</a>
-
-<p>o7</p>
-<img src="https://images-ext-1.discordapp.net/external/W0Qmk0bxJdk_3pBKDOhajuqZAYI_Y-QePb_TjrVhzuM/https/media.discordapp.net/attachments/746208137958129674/908792237012434984/makesweet-k65cvs.gif"/>
-
+    <head>
+    <title>my aswome site</title>
+        
+        <script>
+        function goToGame(num){
+            if(num == 0){
+                window.location.href = "https://crobodile.github.io/ZherzhClicker2/";
+            }
+        }
+        </script>
+        
+        
+        
+        <style>
+        * {margin: 0px; padding: 0px;font-size:0px;}
+            .sections{
+                width:100%;
+                display: inline-block;
+                
+            }
+            #top{
+                background-color:#2a455d;
+                height:20vh;
+            }
+            #bottom{
+                position:relative;
+                background-color: #16202c;
+                height:80vh;
+            }
+            #logo{
+                width:40%;
+                height:auto;
+                position:absolute;
+                left:30%;
+                top:20px;
+            }
+            .container{
+                background-color: #2a455d;
+                border: 5px solid #2a455d;
+                border-radius: 10px;
+            }
+            #gamesheader{
+                position:absolute;
+                width: 40%;
+                left: 30%;
+                top: 10vh;
+                height: 5vh;
+            }
+            .text{
+                left:10px;
+                font-family: Comic Sans MS, Comic Sans, cursive;
+                color:white;
+                font-size:20px;
+            }
+            .game{
+                position: absolute;
+                width:40%;
+                left:30%;
+                height: 15vh;
+                overflow: hidden;
+            }
+            .gameimg{
+                height:10vh;
+                width:20%;
+                border: 5px double deepskyblue;
+            }
+            .gameimg:hover{
+                border: 5px double lightskyblue;
+            }
+            .gametitle{
+                position:absolute;
+                top: -1vh;
+                width: 80%;
+                left: 25%;
+                color:deepskyblue;  
+            }
+            .gametitle:hover{
+                text-decoration: underline;
+                color:lightskyblue;
+            }
+            .gamedescription{
+                position:absolute;
+                top: 20px;
+                width: 70%;
+                left: 25%;
+                color:white;
+                font-size:16px;
+            }
+            .scratch{
+                height:10vh;
+                width:20%;
+                overflow: hidden;
+                border: 5px double deepskyblue;
+            }
+            .scratchgame{
+                position:absolute;
+                top:-40px;
+                overflow: hidden;
+            }
+            .ad{
+                position:absolute;
+                height: 70vh;
+                top:5vh;
+            }
+        
+        
+        </style>
+    </head>
+<body>
+<div class = "sections" id = "top">
+    <img id="logo"src="logo.png">
+</div>
+    
+<div class = "sections" id = "bottom">
+    <div class = "container" id = "gamesheader">
+        <h1 class = "text">NEW GAMES</h1>
+    </div>
+    <div >
+        <img style = "left:31vh" class = "ad" src = "pdfad.png">
+        <img style = "right:31vh" class = "ad" src= "carad.png">
+        
+        <img style = "left:10vh" class = "ad" src= "freemoneyad.png">
+        <img style = "right:10vh" class = "ad" src= "sheepad.png">
+    </div>
+    
+    <div style = "top:20vh" class = "game">
+        <img onclick = "goToGame(0)" class = "gameimg" src="clickerthumbnail.png">
+        <h3 onclick = "goToGame(0)" class = "gametitle text">ƷerʒCoin Clicker</h3>
+        <p class = "gamedescription text">Click the coin and buy upgrades. Use the coins to buy some NFTs with special perks.</p>
+    </div>
+    <div style = "top:35vh" class = "game">
+        
+        <div class = "scratch">
+            
+            <iframe class = "scratchgame" src="https://scratch.mit.edu/projects/131709723/embed" allowtransparency="true" width="20%" height="120" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            
+        </div>
+        
+        <h3 class = "gametitle text">Tomato Adventures</h3>
+        <p class = "gamedescription text">tomato adventures by steven but entirely located within a thumbnail</p>
+    </div>
+    
+</div>
 </body>
+
 </html>
